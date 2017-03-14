@@ -1,0 +1,6 @@
+<h1>Teams Index</h1>
+<ul>
+  <% @teams.each do |name, players| %>
+  <li><a href="/teams/<%=URI.encode(name.to_s)%>"><%=name%></a></li>
+  <% end %>
+</ul>
